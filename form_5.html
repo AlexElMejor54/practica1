@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Seleccione un idioma:</legend>
+            <input type="radio" id="ingles" name="idioma" value="idiomaingles">
+            <label for="ingles">Inglés</label><br>
+            
+            <input type="radio" id="chino" name="idioma" value="idiomachino">
+            <label for="chino">Chino</label><br>
+            
+            <input type="radio" id="aleman" name="idioma" value="idiomaaleman">
+            <label for="aleman">Alemán</label><br>
+            
+            <input type="radio" id="frances" name="idioma" value="idiomafrances">
+            <label for="frances">Francés</label><br>
+        </fieldset>
+        <br>
+
+        <label for="conector">Seleccione un tipo de conector:</label>
+        <select name="conector" id="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select>
+        <br><br>
+
+    
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"><br><br>
+
+        <label for="sexo">Seleccione el sexo (múltiple):</label>
+        <fieldset>
+            <legend>Seleccione sexo:</legend>
+            <input type="checkbox" id="checkMujer" name="sexo" value="sexomujer">Mujer
+            <input type="checkbox" id="checkHombre" name="sexo" value="sexohombre">Hombre
+        </fieldset>
+        <br>
+
+        <label for="fecha">Seleccione una fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+
+       
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

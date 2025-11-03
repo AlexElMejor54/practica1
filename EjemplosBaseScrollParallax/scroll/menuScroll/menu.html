@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal scroll</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <div class="menu">
+                <ul>
+                    <li><a href=""></a>Home</li>
+                    <li><a href=""></a>Servicios</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Gallery</li>
+                    <li><a href=""></a>Our team</li>
+                    <li><a href=""></a>Contact</li>
+                    <li><a href=""></a>FAQ</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet minima at amet laborum mollitia in itaque dicta non? Commodi, illum aut? Magnam optio suscipit laborum, maiores voluptate, atque corporis tenetur asperiores dolore animi adipisci? Voluptate hic nulla iste molestias quo obcaecati dolorum illum? Debitis unde neque dolorum obcaecati nesciunt harum ut odit vero, ipsum labore quam doloremque odio facere consequuntur culpa! Eius, quod sapiente. Culpa, exercitationem dignissimos molestiae natus similique deserunt eum sint voluptate minus eius illo porro deleniti totam quam, doloremque enim modi quia. Perferendis repellat ex fuga architecto aut debitis, repellendus possimus pariatur voluptatem dolorum distinctio modi animi laborum saepe sunt fugiat, error tempora fugit facere asperiores iste officia voluptate deserunt expedita. Distinctio doloribus labore optio minus nostrum cumque ratione sint commodi exercitationem quaerat soluta, totam, quisquam ut aliquam vitae odio, velit consequuntur? Quo praesentium perferendis consectetur alias deleniti, accusamus exercitationem tenetur atque. Quae fugiat ratione beatae ad deserunt reiciendis commodi mollitia eius doloremque odit impedit nostrum consequatur accusamus fugit autem dolor et, perspiciatis animi modi, cum pariatur harum. Sed rerum accusantium fugiat magni ducimus veritatis autem cupiditate quos eum quis facere vitae, ipsum omnis impedit nihil animi ut. Facere corporis accusantium porro accusamus vitae ut! Tempore!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse ipsam dolorem aspernatur aperiam. Tempore, pariatur voluptatum atque aliquid odit, quam laborum necessitatibus sapiente explicabo architecto repudiandae veniam doloribus asperiores ducimus voluptates qui cumque nobis nihil nesciunt distinctio reiciendis odio officiis! Non qui aperiam eius ad enim molestias? Inventore praesentium adipisci ut at facere incidunt nemo nobis voluptas enim soluta non dolore, odit consequuntur officiis impedit a officia debitis sunt, necessitatibus ea fugit tempora maxime! Aut, consequatur. Vel, exercitationem sapiente? Deserunt harum natus aut voluptatibus sint, iure obcaecati consequuntur. Saepe maxime accusamus sint explicabo consectetur quo aliquam voluptatum, quidem fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque et soluta nulla aliquid, laboriosam dolor dolore reiciendis quidem voluptatem officiis sint eveniet animi eius quis debitis minus sapiente maxime. Libero facilis accusantium nisi! Numquam repellendus consequatur architecto minus cupiditate ipsum unde minima dolorem ipsam aliquam, excepturi est exercitationem adipisci quo.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque quasi autem suscipit amet accusantium debitis dolores harum iste sed ducimus ratione nulla, doloribus excepturi culpa dignissimos officiis ut adipisci possimus ipsa numquam veritatis similique id? Iure est suscipit modi! Aperiam vero numquam cupiditate aliquam provident autem, maiores ad minima molestias nulla, aliquid voluptatem nobis esse est quis obcaecati quibusdam accusantium quam! Sequi neque adipisci tempore corporis explicabo nulla culpa iste, repellat distinctio ullam eligendi suscipit, maxime dolorum commodi animi accusantium aspernatur labore at eum voluptates. Maiores fugiat perferendis sequi. Fuga suscipit doloribus, qui consequuntur perferendis quae deleniti quod odio.
+        </p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+        })
+  </script>
+</body>
+</html>

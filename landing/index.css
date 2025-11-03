@@ -1,0 +1,195 @@
+body{
+    font-family:Arial, sans-serif;background:#f8f8f8;
+    margin: 0px;
+    background-color: black;
+}
+
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+    height:70px;
+}
+
+.brand img{
+    height:50px;
+    width:auto;
+}
+
+.icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.icons a img{
+    height:30px;
+
+    display:block;
+}
+.main-logo {
+  margin-top: 20px;       
+  text-align: center;    
+}
+
+
+.header-container {
+  width: 100%;
+  height: 80vh;
+  background-image: url('fotos/640px-Silksong_cover.jpg');
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;  
+}
+
+
+h2{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 300;
+
+}
+#firts-text{
+    padding-top: 35px;
+    padding-bottom: 1px;
+    margin-top: 0px;
+    background-color: black;
+}
+
+
+.container-fotos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  margin:40px;
+}
+
+
+
+.right-column {
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 100px;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+
+.right-column h2{
+    text-align: left;
+}
+
+.right-column p{
+    text-align: left;
+    color: white;
+}
+
+
+.right-column-2 {
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 10%;
+}
+
+.right-column-2 h2{
+    text-align: left;
+}
+
+.right-column-2 p{
+    text-align: left;
+    color: white;
+}
+.left-column-2{
+    margin-right: 100px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;              
+  max-width: 1000px;      
+  margin: 0 auto;         
+  margin-top: 50px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;                           
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* mantiene proporción de la imagen */
+  border-radius: 8px; /* opcional: bordes redondeados */
+}
+
+#foto img{
+    height: 700px;
+}
+#foto{
+    display: flex;
+    justify-content: center;
+}
+.left-column-2 img{
+    height: 400px;
+    margin-right: 200px;
+}
+.container-fotos-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  margin:40px;
+}
+.container-fotos-2 .right-column-2{
+    margin-left: 200px;
+}
+/* Estilo del botón */
+.btn-white {
+  background-color: white;    
+  color: black;               
+  border: none;              
+  padding: 12px 24px;         
+  font-size: 16px;           
+  cursor: pointer;  
+  margin-top: 10px;          
+  display: inline-block;     
+  transition: background 0.3s, color 0.3s;
+}
+
+
+.btn-white:hover {
+  background-color: #f0f0f0; 
+}
+
+.container-fotos-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  margin:40px;
+}
+.container-fotos-3 img{
+    margin-left: 100px;
+}
+.container-fotos-3 .right-column{
+    margin-right: 100px;
+}

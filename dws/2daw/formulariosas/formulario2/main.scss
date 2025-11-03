@@ -1,0 +1,76 @@
+
+$main-font: 'Poppins', sans-serif;
+$primary-color: #101820;
+$secondary-color: #f2aa4c;
+$background-color: #f5f5f5;
+
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  background-color: $background-color;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+@mixin navigation($bg: $primary-color, $text-color: $secondary-color, $gap: 2rem, $padding: 1rem) {
+  background-color: $bg;
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+
+  ul {
+    display: flex;
+    gap: $gap;
+    list-style: none;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: lighten($text-color, 20%);
+    }
+  }
+}
+
+@mixin card($bg: #fff, $radius: 12px, $shadow: 0 4px 12px rgba(0, 0, 0, 0.1), $padding: 1rem) {
+  background-color: $bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: $padding;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 100%;
+    border-radius: $radius $radius 0 0;
+  }
+
+  .card-content {
+    padding: $padding;
+  }
+}
+
+.navbar {
+  @include navigation;
+}
+
+.product-card {
+  @include card($bg: #fafafa, $radius: 16px);
+}

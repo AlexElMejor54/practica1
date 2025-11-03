@@ -1,0 +1,69 @@
+body {
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+}
+.container h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+form {
+  background-color: #fff;
+  color: #333;
+  padding: 2em;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+form:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+form::-moz-placeholder {
+  color: rgb(114.75, 114.75, 114.75);
+}
+form::placeholder {
+  color: rgb(114.75, 114.75, 114.75);
+}
+form button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+form button:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+form .error {
+  border-color: red;
+}
+form .errorplaceholder {
+  color: red;
+}
+form .success {
+  border-color: green;
+}/*# sourceMappingURL=main.css.map */

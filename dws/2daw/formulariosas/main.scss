@@ -1,0 +1,77 @@
+@mixin form-style(
+    $bg-color: #fff,
+    $text-color: #333,
+    $border-color: #ccc,
+    $radius: 6px,
+    $focus-color: #007bff,
+    $shadow: true
+){
+    form{
+        background-color: $bg-color;
+        color: $text-color;
+        padding: 2em;
+        border: 1px solid $border-color;
+        @if $shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid $border-color;
+            font-size: 1rem;
+            background-color: lighten($bg-color, 2%);
+            color: $text-color;
+            transition: all 0.2s ease-in-out;
+        }
+        &:focus{
+            outline: none;
+            border-color: $focus-color;
+            box-shadow: 0 0 5px rgba($focus-color, 0.4);
+        }   
+        &::placeholder{
+            color: lighten($text-color, 25%);
+        }
+        button{
+            display: inline-block;
+            background-color: $focus-color;
+            color: #fff;
+            border: none;
+            border-radius: $radius;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            &:hover{
+                background-color: darken($focus-color, 10%);
+            }
+        }
+        .error{
+            border-color: red;
+            &placeholder{
+                color: red;
+            }  
+        }
+        .success{
+            border-color:green
+        }
+    } 
+}
+
+body{
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    h1{
+        text-align: center;
+        color:  #007bff;
+    }
+}
+@include form-style(#fff,#333,#ddd,6px,#007bff,true);

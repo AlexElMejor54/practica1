@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div id="aside">
+                <model-viewer src="gafas/scene.gltf" alt="A 3D model of a chair" auto-rotate camera-controls ar ios-src="img/vr.usdz" style="width: 100px; height: 100px;">
+            </div>
+            <div id="content">
+                <h2>Gafas de RV</h2>
+                <p>Explora el mundo virtual con nuestras gafas de realidad virtual de última generación. Sumérgete en experiencias inmersivas y descubre nuevas dimensiones.</p>
+                <button>Compra ya crack!</button>
+            </div>
+            <div id="icons">
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

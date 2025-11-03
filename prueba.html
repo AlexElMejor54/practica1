@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form method="post" action="caso_form.asp">
+        <h3>REGISTRO DE USUARIO</h3>
+        <table border="0">
+            <tr>
+                <td>Nombre: <input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellidos: <input type="text" name="apellidos"></td>
+            </tr>
+            <tr>
+                <td>
+                    Sexo:
+                    Hombre: <input type="radio" name="genero" value="m">
+                    Mujer: <input type="radio" name="genero" value="f">
+                </td>
+            </tr>
+            <tr>
+                <td>Correo: <input type="number" name="edad" min="0"></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td><input type="checkbox" name="terminos">Deseo recibir informacion sobre novedades y ofertas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="terminos">Declaro haber leido y aceptado las condiciones generales de programa y la normativa sobre proteccion de datos</td>
+                </tr>
+                <td colspan="2">
+                    <input type="submit" value="Enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

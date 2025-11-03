@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rojales C.F.F. | Fútbol Femenino</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="fcf-navbar">
+      <div class="nav-content left-align">
+        <a href="index.html" class="logo-rojales-link"><img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Escudo Rojales" class="logo-rojales"></a>
+        <ul class="fcf-navlinks">
+          <li class="dropdown nav-main">
+            <a href="#primer-equipo" id="primerEquipoBtn">PRIMER EQUIPO <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu" id="submenuPrimerEquipo">
+              <li><a href="#calendario" class="submenu-item active">CALENDARIO</a></li>
+              <li><a href="clasificacion.html" class="submenu-item">CLASIFICACIÓN</a></li>
+              <li><a href="jugadoras.html" class="submenu-item">JUGADORAS</a></li>
+            </ul>
+          </li>
+          <li><a href="#calendario-directo">CALENDARIO</a></li>
+          <li class="dropdown">
+            <a href="#mas-equipos">MÁS EQUIPOS <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li><a href="#tienda">TIENDA</a></li>
+          <li><a href="#club">INSCRIPCIONES</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="fcf-hero-news-modern">
+      <img src="img/WhatsApp Image 2025-10-25 at 21.14.05.jpeg" alt="Noticia Principal" class="hero-img">
+      <div class="hero-news-overlay-modern">
+        <h1 class="hero-title">NUEVE JUGADORAS NOMINADAS AL PREMIO REGIONAL</h1>
+        <div class="hero-news-footer">
+          <span class="hero-tag">PRIMER EQUIPO</span>
+          <span class="hero-news-time"><i class="fa fa-clock"></i> Hace 2h</span>
+        </div>
+      </div>
+    </section>
+    <section class="fcf-mini-news-row-modern">
+      <div class="news-grid-pro">
+        <article class="news-item">
+          <a href="#" class="news-link">
+            <div class="news-media">
+              <img src="img/WhatsApp Image 2025-10-28 at 15.43.42.jpeg" alt="Noticia 1">
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">Cuatro victorias seguidas para el Rojales</h3>
+              <div class="news-meta">
+                <span class="news-cat">PRIMER EQUIPO</span>
+                <span class="news-date"><i class="fa fa-clock"></i> 28 oct</span>
+              </div>
+              <p class="news-desc">Las jugadoras del primer equipo suman una racha increíble en la temporada 2025.</p>
+            </div>
+          </a>
+        </article>
+        <article class="news-item">
+          <a href="#" class="news-link">
+            <div class="news-media">
+              <img src="img/WhatsApp Image 2025-10-28 at 15.45.24.jpeg" alt="Noticia 2">
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">Entrenamiento de recuperación</h3>
+              <div class="news-meta">
+                <span class="news-cat">BASE</span>
+                <span class="news-date"><i class="fa fa-clock"></i> 27 oct</span>
+              </div>
+              <p class="news-desc">Sesión enfocada a prevención y puesta a punto tras el último partido.</p>
+            </div>
+          </a>
+        </article>
+        <article class="news-item">
+          <a href="#" class="news-link">
+            <div class="news-media">
+              <img src="img/WhatsApp Image 2025-10-28 at 15.45.45.jpeg" alt="Noticia 3">
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">Previa | Partido solidario del fin de semana</h3>
+              <div class="news-meta">
+                <span class="news-cat">CLUB</span>
+                <span class="news-date"><i class="fa fa-clock"></i> 26 oct</span>
+              </div>
+              <p class="news-desc">El Rojales C.F.F. participa en una jornada benéfica con entradas solidarias.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- Próximos partidos -->
+    <section class="matches-section">
+      <div class="matches-header">
+        <h2>PRIMER EQUIPO PARTIDOS</h2>
+        <div class="next-countdown">
+          <span>PRÓXIMO PARTIDO</span>
+          <div id="countdown" class="countdown">
+            <div><b id="cd-days">00</b><small>días</small></div>
+            <div><b id="cd-hours">00</b><small>horas</small></div>
+            <div><b id="cd-mins">00</b><small>min</small></div>
+            <div><b id="cd-secs">00</b><small>s</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="matches-grid" id="matchesGrid">
+        <article class="match-card">
+          <div class="match-label">Próximo partido</div>
+          <header>
+            <div class="team-logos">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Rojales C.F.F." class="team-logo">
+                <span class="team-name">Rojales C.F.F.</span>
+              </div>
+              <img src="img/logosequipos/83000cd9-87ee-4025-95f4-3ec711354b2a.png" alt="Liga" class="league-logo">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Elche" class="team-logo">
+                <span class="team-name">Elche</span>
+              </div>
+            </div>
+          </header>
+          <div class="match-body">
+            <h4>Domingo, 2 de noviembre, 18:30</h4>
+            <p>La Liga · Estadio Municipal Rojales</p>
+            <a class="match-link" href="#">Ficha del partido</a>
+          </div>
+          
+        </article>
+        <article class="match-card">
+          <header>
+            <div class="team-logos">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Club Brugge" class="team-logo">
+                <span class="team-name">Club Brugge</span>
+              </div>
+              <img src="img/logosequipos/83000cd9-87ee-4025-95f4-3ec711354b2a.png" alt="Liga" class="league-logo">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Rojales C.F.F." class="team-logo">
+                <span class="team-name">Rojales C.F.F.</span>
+              </div>
+            </div>
+          </header>
+          <div class="match-body">
+            <h4>Miércoles, 5 de noviembre, 21:00</h4>
+            <p>Champions · Jan Breydelstadion</p>
+            <a class="match-link" href="#">Ficha del partido</a>
+          </div>
+        </article>
+        <article class="match-card">
+          <header>
+            <div class="team-logos">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Celta" class="team-logo">
+                <span class="team-name">Celta</span>
+              </div>
+              <img src="img/logosequipos/83000cd9-87ee-4025-95f4-3ec711354b2a.png" alt="Liga" class="league-logo">
+              <div class="team">
+                <img src="img/WhatsApp Image 2025-10-28 at 11.24.30.jpeg" alt="Rojales C.F.F." class="team-logo">
+                <span class="team-name">Rojales C.F.F.</span>
+              </div>
+            </div>
+          </header>
+          <div class="match-body">
+            <h4>Domingo, 9 de noviembre, 21:00</h4>
+            <p>La Liga · Abanca-Balaídos</p>
+            <a class="match-link" href="#">Ficha del partido</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Fin Próximos partidos -->
+    <section class="fcf-sponsors-modern">
+      <div class="title-yellow">PRINCIPALES PATROCINADORES DEL CLUB</div>
+      <div class="yellow-bar"></div>
+      <a class="sponsor-btn" href="#">MOSTRAR TODOS LOS PATROCINADORES</a>
+      <div class="main-sponsors-row">
+        <img class="sponsor-logo-big adidas-white" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas" />
+        <img class="sponsor-logo-big sponsor-center white-logo" src="img/Made with insMind-logotipo-grande-de-spotify.png" alt="Spotify" />
+        <div class="sponsor-philips-block">
+          <span class="philips">PHILIPS</span>
+          <span class="ambilight">AMBILIGHT <span class="tv">tv</span></span>
+        </div>
+      </div>
+      <div class="sigue-redes">
+        <h3>Sigue al Rojales en las redes sociales</h3>
+        <div class="redes-grid">
+          <div class="red-card instagram"><i class="fab fa-instagram"></i><div><b>Instagram</b><span>@rojalesc.ff</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="fcf-footer">
+    <div class="footer-left">
+      <img src="img/9723f526-4ef5-4a7c-92d9-63be1e3062d4.png" class="club-footer-logo" alt="Rojales Club Logo">
+      <span class="footer-title">ROJALES C.F.F.</span>
+    </div>
+    <div class="footer-copyright">
+      &copy; Copyright ROJALES C.F.F. <span class="footer-extra">Página Oficial del Rojales Club de Fútbol Femenino</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

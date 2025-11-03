@@ -1,0 +1,8 @@
+Model Information:
+* title:	Pico4 Low poly VR headset
+* source:	https://sketchfab.com/3d-models/pico4-low-poly-vr-headset-fba92b30e80f4a92ba75c39c0546449b
+* author:	maverik1845 (https://sketchfab.com/maverik1845)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
