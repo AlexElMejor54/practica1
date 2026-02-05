@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="nav.js"></script>
+    <script src="usuarios.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Usuarios | JS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 50%;
+            font-size: 1em;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center;">Gestión de Usuarios</h2>
+
+    <div style="text-align:center;">
+        <input type="text" id="buscador" placeholder="Buscar por nombre o apellido...">
+    </div>
+
+    <table id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rellenado por JS -->
+        </tbody>
+    </table>
+
+    <!-- MODAL PARA EDICIÓN -->
+    <div id="modalEdicion"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
+        <div
+            style="background:white; padding:30px; border-radius:10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width:350px;">
+            <h3>Editar Usuario</h3>
+            <div style="margin-bottom:10px;">
+                <label>Nombre:</label><br>
+                <input type="text" id="editNombre" style="width:100%;">
+            </div>
+            <div style="margin-bottom:10px;">
+                <label>Apellidos:</label><br>
+                <input type="text" id="editApellidos" style="width:100%;">
+            </div>
+            <div style="margin-bottom:10px;">
+                <label>Email (No editable):</label><br>
+                <input type="text" id="editEmail" disabled style="width:100%; background:#eee;">
+            </div>
+            <div style="margin-bottom:20px;">
+                <label>Edad:</label><br>
+                <input type="number" id="editEdad" style="width:100%; padding:8px;">
+            </div>
+            <div style="text-align:right;">
+                <button id="btnCancelar" style="background:#999; margin-right:10px;">Cancelar</button>
+                <button id="btnGuardar" style="background:#28a745;">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
