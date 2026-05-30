@@ -1,0 +1,8 @@
+<a class="card" [routerLink]="['/pokemon', pokemon().id]">
+  <span class="card-id">#{{ pokemon().id }}</span>
+  <div class="card-image-wrap">
+    <img [src]="pokemon().imageUrl" [alt]="pokemon().name" loading="lazy" />
+  </div>
+  <h3>{{ pokemon().name }}</h3>
+  <span class="card-cta">Ver detalle →</span>
+</a>

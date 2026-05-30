@@ -1,0 +1,48 @@
+<section class="dashboard">
+  <header class="hero">
+    <div class="hero-badge">Gotta catch 'em all!</div>
+    <h1 class="page-title">Explora el mundo Pokémon</h1>
+    <p class="page-subtitle">Descubre criaturas al azar en cada visita y busca tu favorito</p>
+  </header>
+
+  <div class="search-box glass-panel">
+    <div class="search-header">
+      <span class="search-icon">🔍</span>
+      <h2>Buscar Pokémon</h2>
+    </div>
+    <form (ngSubmit)="onSearch()" class="search-form">
+      <input
+        class="input-field"
+        type="text"
+        [ngModel]="searchTerm()"
+        (ngModelChange)="searchTerm.set($event)"
+        placeholder="Nombre del Pokémon (ej: pikachu, charizard...)"
+        name="search"
+      />
+      <button type="submit" class="btn-primary">Buscar</button>
+    </form>
+    @if (searchError()) {
+      <p class="error-msg">{{ searchError() }}</p>
+    }
+  </div>
+
+  <div class="section-header">
+    <h2>⚡ Pokémon destacados</h2>
+    <span class="section-tag">Selección aleatoria</span>
+  </div>
+
+  @if (loading()) {
+    <div class="loading-state">
+      <div class="pokeball-loader"></div>
+      <span>Capturando Pokémon...</span>
+    </div>
+  } @else if (errorMessage()) {
+    <p class="error-msg">{{ errorMessage() }}</p>
+  } @else {
+    <div class="grid">
+      @for (pokemon of randomPokemon(); track pokemon.id) {
+        <app-pokemon-card [pokemon]="pokemon" />
+      }
+    </div>
+  }
+</section>

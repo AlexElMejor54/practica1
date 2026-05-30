@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a routerLink="/" class="navbar-brand">
+      <span class="pokeball-icon" aria-hidden="true"></span>
+      <span class="brand-text">Pokédex</span>
+    </a>
+    <ul class="navbar-links">
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="nav-icon">⚡</span> Dashboard
+        </a>
+      </li>
+      <li>
+        <a routerLink="/lista" routerLinkActive="active">
+          <span class="nav-icon">📋</span> Listado
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

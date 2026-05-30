@@ -1,0 +1,57 @@
+<section class="list-page">
+  <header class="list-header">
+    <h1 class="page-title">Listado completo</h1>
+    <p class="page-subtitle">Explora todos los Pokémon registrados en la Pokédex</p>
+  </header>
+
+  @if (loading()) {
+    <div class="loading-state">
+      <div class="pokeball-loader"></div>
+      <span>Cargando listado...</span>
+    </div>
+  } @else if (errorMessage()) {
+    <p class="error-msg">{{ errorMessage() }}</p>
+  } @else {
+    <div class="list-container glass-panel">
+      <div class="list-table-header">
+        <span class="col-id">ID</span>
+        <span class="col-name">Nombre</span>
+        <span class="col-action"></span>
+      </div>
+
+      @for (entry of entries(); track entry.id) {
+        <a class="list-row" [routerLink]="['/pokemon', entry.id]">
+          <span class="col-id">
+            <span class="id-badge">#{{ entry.id }}</span>
+          </span>
+          <span class="col-name">{{ entry.name }}</span>
+          <span class="col-action">→</span>
+        </a>
+      }
+    </div>
+
+    <div class="pagination">
+      <button
+        type="button"
+        class="btn-secondary"
+        [disabled]="currentPage() === 1"
+        (click)="goToPage(currentPage() - 1)"
+      >
+        ← Anterior
+      </button>
+      <div class="page-indicator">
+        <span class="page-current">{{ currentPage() }}</span>
+        <span class="page-sep">/</span>
+        <span class="page-total">{{ totalPages() }}</span>
+      </div>
+      <button
+        type="button"
+        class="btn-secondary"
+        [disabled]="currentPage() === totalPages()"
+        (click)="goToPage(currentPage() + 1)"
+      >
+        Siguiente →
+      </button>
+    </div>
+  }
+</section>

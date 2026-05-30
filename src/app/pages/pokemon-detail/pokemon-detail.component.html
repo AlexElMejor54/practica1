@@ -1,0 +1,72 @@
+<section class="detail-page">
+  <a routerLink="/" class="back-link">
+    <span class="back-arrow">←</span> Volver al inicio
+  </a>
+
+  @if (loading()) {
+    <div class="loading-state">
+      <div class="pokeball-loader"></div>
+      <span>Analizando Pokémon...</span>
+    </div>
+  } @else if (errorMessage()) {
+    <p class="error-msg">{{ errorMessage() }}</p>
+  } @else if (pokemon(); as poke) {
+    <div class="detail-card glass-panel">
+      <div class="detail-hero">
+        <div class="hero-glow"></div>
+        <div class="detail-image-container">
+          <img [src]="imageUrl()" [alt]="poke.name" class="detail-image" />
+        </div>
+        <div class="detail-info">
+          <span class="detail-id">#{{ poke.id.toString().padStart(3, '0') }}</span>
+          <h1 class="detail-name">{{ poke.name }}</h1>
+          <div class="types">
+            @for (typeSlot of poke.types; track typeSlot.slot) {
+              <span class="type-badge" [class]="getTypeClass(typeSlot.type.name)">
+                {{ typeSlot.type.name }}
+              </span>
+            }
+          </div>
+          <div class="quick-stats">
+            <div class="quick-stat">
+              <span class="quick-label">Altura</span>
+              <span class="quick-value">{{ poke.height / 10 }} m</span>
+            </div>
+            <div class="quick-stat">
+              <span class="quick-label">Peso</span>
+              <span class="quick-value">{{ poke.weight / 10 }} kg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-stats">
+        <div class="stats-panel">
+          <h2>📊 Estadísticas base</h2>
+          @for (stat of poke.stats; track stat.stat.name) {
+            <div class="stat-row">
+              <span class="stat-name">{{ stat.stat.name }}</span>
+              <div class="stat-bar">
+                <div
+                  class="stat-fill"
+                  [style.width.%]="stat.base_stat"
+                  [class.high]="stat.base_stat >= 100"
+                  [class.medium]="stat.base_stat >= 60 && stat.base_stat < 100"
+                ></div>
+              </div>
+              <span class="stat-value">{{ stat.base_stat }}</span>
+            </div>
+          }
+        </div>
+
+        <div class="total-panel">
+          <h2>💪 Poder total</h2>
+          <div class="total-value">
+            {{ getTotalStats(poke) }}
+          </div>
+          <p class="total-desc">Suma de todas las estadísticas base</p>
+        </div>
+      </div>
+    </div>
+  }
+</section>
