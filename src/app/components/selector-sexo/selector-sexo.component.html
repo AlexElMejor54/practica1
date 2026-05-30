@@ -1,0 +1,19 @@
+<div class="selector-sexo">
+  <span class="etiqueta">Sexo</span>
+  <div class="botones">
+    <button
+      type="button"
+      [ngClass]="{ activo: sexoSeleccionado === 'hombre' }"
+      (click)="elegir('hombre')"
+    >
+      Hombre
+    </button>
+    <button
+      type="button"
+      [ngClass]="{ activo: sexoSeleccionado === 'mujer' }"
+      (click)="elegir('mujer')"
+    >
+      Mujer
+    </button>
+  </div>
+</div>

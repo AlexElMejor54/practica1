@@ -1,0 +1,16 @@
+<section class="listado">
+  <h2>Resultados de la sesión</h2>
+
+  <p *ngIf="resultados.length === 0" class="vacio">
+    Todavía no has calculado ningún IMC.
+  </p>
+
+  <ul *ngIf="resultados.length > 0">
+    <li *ngFor="let r of resultados; let i = index">
+      <strong>{{ i + 1 }}. {{ r.nombre }}</strong>
+      ({{ r.sexo }}) — Peso: {{ r.peso }} kg, Altura: {{ r.altura }} cm
+      <br />
+      IMC: <strong>{{ r.imc }}</strong> — {{ r.mensaje }}
+    </li>
+  </ul>
+</section>

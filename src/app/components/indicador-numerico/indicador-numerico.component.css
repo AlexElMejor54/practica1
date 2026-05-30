@@ -1,0 +1,37 @@
+.indicador {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.etiqueta {
+  font-weight: 600;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controles button {
+  width: 44px;
+  height: 44px;
+  font-size: 1.4rem;
+  border: 1px solid #1a5f4a;
+  background: white;
+  color: #1a5f4a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controles button:hover {
+  background: #e8f5f0;
+}
+
+.valor {
+  min-width: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

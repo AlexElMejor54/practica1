@@ -1,0 +1,29 @@
+.selector-sexo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.etiqueta {
+  font-weight: 600;
+}
+
+.botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.botones button {
+  flex: 1;
+  padding: 0.6rem;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botones button.activo {
+  border-color: #1a5f4a;
+  background: #1a5f4a;
+  color: white;
+}
