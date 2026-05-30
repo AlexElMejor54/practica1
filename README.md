@@ -120,4 +120,4 @@ routes/web.php                    # Definición de rutas
 
 ## Autor
 
-Alejandro Brugarolas Sánchez-Lidón — 2º DAW — EFA El Campico
+Alejandro Barberá Castillo — 2º DAW — EFA El Campico
